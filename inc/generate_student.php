@@ -7,6 +7,21 @@
 	$config = parse_ini_file("config.ini", true);
 	$web_link = $config["qrscan"]["website_link"];
  ?>
+
+ <nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="col-md-3 col-xs-3">
+  <div class="row">
+   <div class="navbar-header">
+    <button type="button" id="sidebarCollapse" class="navbar-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</div>
+</div>
+
 <span style="display: none" id="web_link"><?php echo $web_link ?></span>
 <div class="modal-dialog" style="margin-top: 60px;">
 	<div class="modal-content">
@@ -98,7 +113,8 @@
 
   </div>
 </div>
-
+</div>
+</nav>
 <script type="text/javascript">
 
 
